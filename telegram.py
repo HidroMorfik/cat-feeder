@@ -12,14 +12,14 @@ os.chdir("/home/zesma/Desktop/project/")
 
 
 #time.sleep(30)
-bot = Bot(token='6922726889:AAEGEus7AD7skqWT8_aIkZl9wUvyUbLHl_s')
+bot = Bot(token='BOT_TOKEN')
 dp = Dispatcher(bot)
 
 cam = Camera()
 c = CatDetection()
 
 exit_flag = False
-chat_id = '-4054641232'
+chat_id = 'CHAT_ID'
 
 
 
@@ -88,7 +88,7 @@ async def send_image():
             os.remove("image_1.png")
             print("image_1.png dosyası gönderildi ve silindi.")
 
-        # Her 60 saniyede bir kontrol et
+        # Her 5 saniyede bir kontrol et
         await asyncio.sleep(5)
 
 async def on_error(update, exception):
